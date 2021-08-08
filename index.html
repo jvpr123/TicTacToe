@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLESHEETS -->
+    <link href='./styles/global.css' rel='stylesheet' type='text/css'>
+    <link href='./styles/index.css' rel='stylesheet' type='text/css'>
+    <link href='./styles/bg-animation.css' rel='stylesheet' type='text/css'>
+
+    <!-- TAB ICON -->
+    <link href='./assetstic-tac-toe.png' rel='icon' type='image/png'>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
+    <title>GAME | TIC TAC TOE</title>
+</head>
+
+<body class='flex-column'>
+    
+    <header class='header-footer'>
+        <img src='./assets/tic-tac-toe.png' alt='Tic tac toe game icon.'>
+        <h1>Tic Tac Toe</h1>
+        <img src='./assets/tic-tac-toe.png' alt='Tic tac toe game icon.'>
+    </header>
+
+    <main class='flex-column'>
+        
+        <div id='btn-container' class="buttons-container open-buttons-container flex-column">
+            <a class='btn btn-settings opponent' id='human' href='#'>Play with friend</a>
+            <a class='btn btn-settings opponent' id='ai' href='#'>Play with AI</a>
+        </div>
+
+        
+        <div id='table-container' class="table sr-only">
+            <div id='0' class="square"></div>
+            <div id='1' class="square"></div>
+            <div id='2' class="square"></div>
+            <div id='3' class="square"></div>
+            <div id='4' class="square"></div>
+            <div id='5' class="square"></div>
+            <div id='6' class="square"></div>
+            <div id='7' class="square"></div>
+            <div id='8' class="square"></div>
+        </div>
+
+        <div class='flex-column sr-only' id="modal">
+            <h1 id='final-game-state'></h1>
+            <div class="controll flex-column">
+                <button id='home' class='btn-settings'>Home</button>
+                <button id='restart' class='btn-settings'>Restart</button>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="bg-animation vertical">
+        <div id='vertical-01' class="box">X</div>
+        <div id='vertical-02' class="box">O</div>
+        <div id='vertical-03' class="box">X</div>
+        <div id='vertical-04' class="box">O</div>
+    </div>
+    <div class="bg-animation horizontal">
+        <div id='horizontal-01' class="box">O</div>
+        <div id='horizontal-02' class="box">X</div>
+        <div id='horizontal-03' class="box">O</div>
+        <div id='horizontal-04' class="box">X</div>
+    </div>
+
+    <footer class='header-footer'>
+        <p>Developer: João Victor Rodrigues</p>
+        <div class="social-media-container">
+            <a class='btn' href='https://www.linkedin.com/in/jo%C3%A3o-victor-pereira-rodrigues-6a65b8128/'>
+                <img src='./assets/linkedin.png' alt='LinkedIn icon.'>
+                LinkedIn
+            </a>
+            <a class='btn' href='https://github.com/jvpr123/jvpr123'>
+                <img src='./assets/github.png' alt='Github icon.'>
+                Github
+            </a>
+        </div>
+
+        <a href="https://icons8.com.br" id='att'>Icons from: Icons8</a>
+    </footer>
+
+    <script src='./scripts/config.js' type='text/javascript'> </script>
+    <script src='./scripts/gameRules.js' type='text/javascript'> </script>
+    <script src='./scripts/gameInterface.js' type='text/javascript'> </script>
+
+</body>
+</html>

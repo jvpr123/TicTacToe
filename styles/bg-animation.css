@@ -1,0 +1,120 @@
+/* POSITIONS FOR BG ANIMATIONS */
+.bg-animation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+
+    width: 100vw;
+    height: 100vh;
+
+    
+    color: var(--grey);
+
+    overflow: hidden;
+}
+
+.vertical {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    align-content: flex-end;
+}
+
+.horizontal {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+}
+
+.vertical .box {
+    position: relative;
+    bottom: -15vh;
+
+    margin: auto;
+
+    width: 15vw;
+
+    text-align: center;
+    font-size: 5rem;
+    opacity: .5;
+
+    animation: up-to-down 8s ease-in-out infinite normal running;
+}
+
+.horizontal .box {
+    position: relative;
+    right: -15vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 15vh;
+
+    text-align: center;
+    font-size: 5rem;
+    opacity: .5;
+
+    animation: side-to-side 8s ease-in-out infinite normal running;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* SETTING DURATION FOR EACH ANIMATION ELEMENT */
+.bg-animation #vertical-01 {
+    animation-delay: .9s;
+}
+.bg-animation #vertical-02 {
+    animation-delay: 1.8s;
+}
+.bg-animation #vertical-03 {
+    animation-delay: 2.7s;
+}
+.bg-animation #vertical-04 {
+    animation-delay: 3.6s;
+}
+
+.bg-animation #horizontal-01 {
+    animation-delay: 1s;
+}
+.bg-animation #horizontal-02 {
+    animation-delay: 4s;
+}
+.bg-animation #horizontal-03 {
+    animation-delay: 2s;
+}
+.bg-animation #horizontal-04 {
+    animation-delay: 3s;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* KEYFRAMES */
+@keyframes up-to-down {
+    0% {
+        bottom: -15vh;
+    }
+    50% {
+        bottom: 110vh;
+        
+        transform: rotate(360deg);
+    }
+    100% {
+        bottom: -15vh;
+    }
+}
+
+@keyframes side-to-side {
+    0% {
+        right: -15vw;
+    }
+    50% {
+        right: 110vw;
+        transform: rotate(360deg);
+    }
+    100% {
+        right: -15vw;
+    }
+}
