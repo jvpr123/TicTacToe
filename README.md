@@ -8,7 +8,7 @@
 <p>The following secctions explain the project details.</p>
 <p>If you just want to have some fun, access the link below to start playing:</p>
     
-<a href='jv-tic-tac-toe.netlify.app'>Play Tic Tac Toe</a>
+<a href='https://jv-tic-tac-toe.netlify.app'>Play Tic Tac Toe</a>
 
 <br>
 
