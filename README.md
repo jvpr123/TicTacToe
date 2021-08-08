@@ -1,4 +1,4 @@
-<h1> <img src='./assets/home/tic-tac-toe.png' alt='Tic tac toe game icon.'> Tic Tac Toe </h1>
+<h1> <img src='./assets/tic-tac-toe.png' alt='Tic tac toe game icon.'> Tic Tac Toe </h1>
 
 <br>
 
